@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Comments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Leave an Anonymous Comment</h1>
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = '';  // Replace with your page's canonical URL or leave it empty
+            this.page.identifier = 'anonymous_comments'; // Replace with your page's unique identifier
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ferndiggity-github-io.disqus.com/embed.js'; // Replace EXAMPLE with your Disqus shortname
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+</body>
+</html>
